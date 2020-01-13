@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#graphs {
+    width: 75%;
+    height: 100%;
+    background: #323232;
+    display: flex;
+    flex-direction: column;
+}
+
+div.separator {
+    width: 5px;
+    height: 100%;
+    background: #515151;
+    cursor: e-resize
+}
+
+div#expressions {
+    flex: 1;
+    height: 100%;
+    background: whitesmoke;
+    position: relative;
+}
+
+#graphs #wave-graph {
+    width: 100%;
+    height: 40%;
+    background: #414141;
+}
+
+div.conteiner {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#graphs .conteiner #polar-graph {
+    width: 40%;
+    height: 100%;
+    background: steelblue;
+}
+
+#graphs .conteiner #fourier-graph {
+    flex: 1;
+    background: thistle;
+    border-left: 5px solid #515151;
+}
+
+.graph-sep {
+    width: 100%;
+    height: 5px;
+    background: #515151;
+    cursor: s-resize;
+}
